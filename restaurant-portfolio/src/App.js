@@ -16,6 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
       </Routes>
+      <h2 className='slider-header'>Here's some images of some of my past homes</h2>
       <ImageSlider slides={SliderData}/>
     </main>
     </div>

@@ -133,8 +133,8 @@
 }
 
 .image {
-  width: 900px;
-  height: 500px;
+  width: 70vw;
+  height: 70vh;
   border-radius: 10px;
 }
 
@@ -171,3 +171,14 @@
   transform: scale(1.08);
 }
 
+.head-img{
+  width: 75px;
+  height: auto;
+  border-radius: 50%;
+  
+}
+
+.about {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}

@@ -16,7 +16,12 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
       </Routes>
-      <h2 className='slider-header'>Here's some images of some of my past homes</h2>
+      <p className='about'>
+        Having been in the hospitality industry for over 20 years, I have a true passion for the culture of a restaurant. 
+        Guests and co-workers alike, are of equal importance and I have always placed respect for those around me right on par 
+        with efficient workflow and professionalism. 
+      </p>
+      <h2 className='slider-header'>Here's some images from some of my previous homes</h2>
       <ImageSlider slides={SliderData}/>
     </main>
     </div>

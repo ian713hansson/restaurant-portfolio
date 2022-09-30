@@ -8,6 +8,17 @@ import { SliderData } from './components/SliderData';
 
 
 function App() {
+  const onButtonClick = () => {
+    fetch('Resume July 2022.pdf').then(response => {
+        response.blob().then(blob => {
+            const fileURL = window.URL.createObjectURL(blob)
+            let alink = document.createElement('a')
+            alink.href = fileURL
+            alink.download = 'Resume July 2022.pdf'
+            alink.click()
+        })
+    })
+}
   return (
     <div className="App">
       <Header />
@@ -23,6 +34,12 @@ function App() {
       </p>
       <h2 className='slider-header'>Here's some images from some of my previous homes</h2>
       <ImageSlider slides={SliderData}/>
+      <div className='download-resume'>
+                <h2>Click Below To Download My Resume</h2>
+                <a href="Resume.pdf" download='Resume.pdf'>
+                    <img className="download-btn" src='https://i.imgur.com/diKnGrS.png' onClick={onButtonClick} />
+                </a>
+            </div>
     </main>
     </div>
   );

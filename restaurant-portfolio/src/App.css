@@ -37,7 +37,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  color: #336b33;
+  color: #c7e94d;
   text-shadow: 2.5px 2.5px black;
   pointer-events: none;
 }
@@ -183,4 +183,18 @@
 .about {
   margin-left: 5vw;
   margin-right: 5vw;
+}
+
+@media only screen and (max-width: 400px) {
+  .image {
+    width: 90vw;
+    height: auto;
+    margin-top: -160px;
+  }
+  .right-arrow{
+    font-size: 1.5rem;
+  }
+  .left-arrow{
+    font-size: 1.5rem;
+  }
 }
